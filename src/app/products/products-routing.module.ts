@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BasicPagesComponent } from './pages/basic-pages/basic-pages.component';
 import { CommonPageComponent } from './pages/common-page/common-page.component';
 import { NumberPageComponent } from './pages/number-page/number-page.component';
+import { OrderComponent } from './pages/order/order.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path:'common', component:CommonPageComponent
+  },
+  {
+    path:'custom', component:OrderComponent
   },
   {
     path:'**', redirectTo:''
